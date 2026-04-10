@@ -48,33 +48,27 @@ Si considerino i seguenti **scenari**:
 
 1. Grafico temporale dello scheduler (timeline ciclica):
 
-```mermaid  
-gantt  
-title Round Robin — N=2 Q=10ms Tc=1ms  
-dateFormat X  
-axisFormat %L  
-  
-section CPU  
-P1 :p1, 0, 10  
-Context switch :cs1, 10, 1  
-P2 :p2, 11, 10  
-Context switch :cs2, 21, 1  
-P1 :p3, 22, 10  
-Context switch :cs3, 32, 1  
-P2 :p4, 33, 10
+```mermaid
 
+---
+displayMode: compact
+---
 
-```mermaid  
-gantt  
-title Scenario 1  
-dateFormat X  
-axisFormat %L  
-  
-section CPU  
-P1 : 0, 10  
-CS : 10, 1  
-P2 : 11, 10  
-CS : 21, 1  
-P1 : 22, 10  
-CS : 32, 1  
-P2 : 33, 10
+gantt
+title Round Robin — N=2 Q=10ms Tc=1ms
+dateFormat x
+axisFormat %L
+
+section CPU
+    P1 : p1, 0, 10
+    Tc : crit, 1ms
+    P2 : 10ms
+    Tc : crit, 1ms
+    P1 : 10ms
+    Tc : crit, 1ms
+    P2 : 10ms
+    Tc : crit, 1ms
+    P1 : 10ms
+    Tc : crit, 1ms
+    P2 : 10ms
+```
