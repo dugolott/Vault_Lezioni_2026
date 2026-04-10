@@ -1,0 +1,11 @@
+{
+  "templater-obsidian:create-_templates/lezione.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "L"
+    }
+  ]
+}
