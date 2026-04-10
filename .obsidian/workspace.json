@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3A/TEP/Lezioni/2026-04-10 Scheduling Processi.md",
+                "file": "3A/TEP/Esercizi/01 - Scheduling - Overhead RoundRobin.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-10 Scheduling Processi"
+              "title": "01 - Scheduling - Overhead RoundRobin"
             }
           }
         ]
@@ -199,6 +199,9 @@
   },
   "active": "965a4ce2ad871baf",
   "lastOpenFiles": [
+    "_templates/esercizio.md",
+    "3A/TEP/Esercizi/01 - Scheduling - Overhead RoundRobin.md",
+    "3A/TEP/Lezioni/2026-04-10 Scheduling Processi.md",
     "5C/Sistemi e Reti/Lezioni/2026-04-08 Caso di Studio - Infotainment Trasporti Pubblici Praga.md",
     "5C/GPOI/Lezioni",
     "5C/GPOI/Untitled.md",
@@ -213,7 +216,6 @@
     "_scripts",
     "5C/Sistemi e Reti/Lezioni",
     "4C/Sistemi e Reti/Lezioni/2026-04-10 Wi-Fi Sicurezza Enterprise.md",
-    "3A/TEP/Lezioni/2026-04-10 Scheduling Processi.md",
     "4C/Sistemi e Reti/Lezioni/img",
     "2026-04-10 Wi-Fi Sicurezza Enterprise.md",
     "img",

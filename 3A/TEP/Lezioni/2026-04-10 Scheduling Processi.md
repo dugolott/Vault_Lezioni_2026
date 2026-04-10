@@ -29,7 +29,7 @@ Scheduling Processi  - Ripasso
 - Confronto fra i diversi "setup" di MQLF nei SO più diffusi (windows, linux, macOS).
 
 - Overhead: tempo necessario per eseguire le operazioni di scheduling (cambio di contesto, gestione code, ecc.) che può influire sulle prestazioni del sistema.
-Confronto di alcuni esempio (vedi esercizio)
+	Confronto di alcuni casi di esempio (vedi esercizio)
 
 ## Attività
 

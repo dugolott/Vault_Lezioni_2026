@@ -25,7 +25,6 @@ await tp.file.rename(nome);
 # Esercizio — <% argomento %> <% keyword %>
 
 tipo: esempio | guidato | rinforzo | compito | verifica
-classe:
 tempo:
 
 ## Testo
