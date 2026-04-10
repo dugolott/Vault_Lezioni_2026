@@ -1,3 +1,7 @@
 [
-  "templater-obsidian"
+  "templater-obsidian",
+  "copilot",
+  "editing-toolbar",
+  "obsidian-excalidraw-plugin",
+  "obsidian-git"
 ]
