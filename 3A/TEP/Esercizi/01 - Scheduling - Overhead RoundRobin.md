@@ -60,15 +60,15 @@ dateFormat x
 axisFormat %L
 
 section CPU
-    P1 : p1, 0, 10
+    P1 : active , 0, 10
     Tc : crit, 1ms
     P2 : 10ms
     Tc : crit, 1ms
-    P1 : 10ms
+    P1 : active, 10ms
     Tc : crit, 1ms
     P2 : 10ms
     Tc : crit, 1ms
-    P1 : 10ms
+    P1 :  active , 10ms
     Tc : crit, 1ms
     P2 : 10ms
 ```
