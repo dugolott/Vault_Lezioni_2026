@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_templates/lezione.md",
+                "file": "3A/TEP/Esercizi/01 - Scheduling - Overhead RoundRobin.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura di lezione"
+              "title": "Struttura di 01 - Scheduling - Overhead RoundRobin"
             }
           },
           {
@@ -197,7 +197,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "965a4ce2ad871baf",
+  "active": "fdf2c86b1d9a4973",
   "lastOpenFiles": [
     "_templates/esercizio.md",
     "3A/TEP/Esercizi/01 - Scheduling - Overhead RoundRobin.md",
