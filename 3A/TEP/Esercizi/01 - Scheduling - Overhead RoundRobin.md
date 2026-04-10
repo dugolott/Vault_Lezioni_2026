@@ -3,7 +3,7 @@
 # Esercizio — Scheduling Overhead RoundRobin
 
 tipo: compito | correzione
-tempo:
+tempo: 15 min
 
 ## Testo
 
