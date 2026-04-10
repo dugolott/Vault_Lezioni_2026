@@ -62,3 +62,19 @@ Context switch :cs2, 21, 1
 P1 :p3, 22, 10  
 Context switch :cs3, 32, 1  
 P2 :p4, 33, 10
+
+
+```mermaid  
+gantt  
+title Scenario 1  
+dateFormat X  
+axisFormat %L  
+  
+section CPU  
+P1 : 0, 10  
+CS : 10, 1  
+P2 : 11, 10  
+CS : 21, 1  
+P1 : 22, 10  
+CS : 32, 1  
+P2 : 33, 10
