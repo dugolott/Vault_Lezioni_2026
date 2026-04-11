@@ -190,8 +190,7 @@ section CPU
 >
 >     `Tr = Tw + Q`
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]
-(https://colab.research.google.com/drive/1Ox8xYQ-YdyU9M7LH_0q-gCd4ZuwwoZlV?usp=sharing)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ox8xYQ-YdyU9M7LH_0q-gCd4ZuwwoZlV?usp=sharing)
 
 1. **Dimensione del quanto di tempo**
     Al variare di Q a parità di Tc, la percentuale di overhead diminuisce all’aumentare di Q, poiché il numero di context switch per unità di tempo diminuisce. Tuttavia, un Q troppo grande può aumentare il tempo di risposta dei processi interattivi, rendendo il sistema meno reattivo.
