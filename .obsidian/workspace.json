@@ -11,10 +11,14 @@
             "id": "e951b4c52b2d6084",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "3A/TEP/Esercizi/01 - Scheduling - Overhead RoundRobin.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "01 - Scheduling - Overhead RoundRobin"
             }
           }
         ]

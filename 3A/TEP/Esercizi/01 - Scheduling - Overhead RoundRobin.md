@@ -40,13 +40,13 @@ N = 100, Q = 10 ms, Tcsw = 100 ns
 
 1. **Disegnare** il grafico temporale dell'attività dello scheduler (timeline ciclica)
 
-2. **Per ciascuno scenario clcolare:**
-    a) Tempo di ciclo dello scheduler, ovvero il tempo necessario affinché tutti i processi vengano eseguiti una volta
-    b) Tempo di CPU ricevuto da ciascun processo per secondo:
-    c) Percentuale di CPU per processo
-    d) Overhead dello scheduler
-    e) Tempo di attesa tra due esecuzioni consecutive
-    f) Tempo di risposta percepito
+2. **Per ciascuno scenario calcolare:**
+    a. Tempo di ciclo dello scheduler, ovvero il tempo necessario affinché tutti i processi vengano eseguiti una volta
+    b. Tempo di CPU ricevuto da ciascun processo per secondo:
+    c. Percentuale di CPU per processo
+    d. Overhead dello scheduler
+    e. Tempo di attesa tra due esecuzioni consecutive
+    f. Tempo di risposta percepito
 
 3. **Confrontare sinteticamente i risultati e rispondere:**
 
@@ -68,7 +68,6 @@ N = 100, Q = 10 ms, Tcsw = 100 ns
 ### 1. Grafico temporale dello scheduler (timeline ciclica)
 
 ```mermaid
-
 ---
 displayMode: compact
 ---
@@ -165,31 +164,34 @@ section CPU
 ```
 
 ### 2. Calcoli
-Ripassiamo le formule:
 
-a) Tempo di ciclo dello scheduler, ovvero il tempo necessario affinché tutti i processivengano eseguiti una volta:
+> [!info]+ Ripassiamo le formule
+> a) Tempo di ciclo dello scheduler, ovvero il tempo necessario affinché tutti i processivengano eseguiti una volta:
+>
+>     `Tcycle = N · (Q + Tcsw)`
+>
+> b) Tempo di CPU ricevuto da ciascun processo per secondo:
+>
+>     `CPU/sec = Q / Tcycle`
+>
+> c) Percentuale di CPU per processo
+>
+>     `%CPU = Q / Tcycle · 100`
+>
+> d) Overhead dello scheduler
+>
+>     `Overhead = Tcsw / (Q + Tcsw) · 100`
+>
+> e) Tempo di attesa tra due esecuzioni consecutive
+>
+>     `Tw = (N − 1) · (Q + Tcsw)`
+>
+> f) Tempo di risposta percepito. Per processi interattivi:
+>
+>     `Tr = Tw + Q`
 
-    `Tcycle = N · (Q + Tcsw)`
-
-b) Tempo di CPU ricevuto da ciascun processo per secondo:
-
-    `CPU/sec = Q / Tcycle`
-
-c) Percentuale di CPU per processo
-
-    `%CPU = Q / Tcycle · 100`
-
-d) Overhead dello scheduler
-
-    `Overhead = Tcsw / (Q + Tcsw) · 100`
-
-e) Tempo di attesa tra due esecuzioni consecutive
-
-    `Tw = (N − 1) · (Q + Tcsw)`
-
-f) Tempo di risposta percepito. Per processi interattivi:
-
-    `Tr = Tw + Q`
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]
+(https://colab.research.google.com/drive/1Ox8xYQ-YdyU9M7LH_0q-gCd4ZuwwoZlV?usp=sharing)
 
 1. **Dimensione del quanto di tempo**
     Al variare di Q a parità di Tc, la percentuale di overhead diminuisce all’aumentare di Q, poiché il numero di context switch per unità di tempo diminuisce. Tuttavia, un Q troppo grande può aumentare il tempo di risposta dei processi interattivi, rendendo il sistema meno reattivo.
