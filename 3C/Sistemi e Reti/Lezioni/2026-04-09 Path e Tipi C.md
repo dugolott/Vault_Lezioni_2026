@@ -1,4 +1,4 @@
-# 10/04 — Variabili di ambiente e tipi in C
+#2026-04-09 — Variabili di ambiente e tipi in C
 
 tags: [lezione]
 classe: 3C INF
