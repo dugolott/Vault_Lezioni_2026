@@ -31,14 +31,14 @@ Per quanto riguarda l'*autenticazione*, le reti WiFi possono adottare diversi li
 
 - Open (nessuna autenticazione) --> vulnerabile a chiunque, soluzione non accettabile per reti private, aziendali o pubbliche
 - PSK (password condivisa) --> semplice ma poco sicura (password condivisa: un segreto è tale solo se è conosciuto da pochi, ma in questo caso è condiviso da tutti)
-- Enterprise (autenticazione centralizzata) --> ogni utente ha credenziali univoche, gestite da un server centralizzato (RADIUS)
+- Enterprise (autenticazione centralizzata) --> ogni utente ha credenziali univoche, gestite da un server centrale (RADIUS)
 
 Al di là del modello di autenticazione, quello che veramente garantisce la triade CIA della sicurezza è il protocollo di cifratura. In ordine di sicurezza crescente, abbiamo:
 
-WEP --> Deprecato, vulnerabile
-WPA --> Miglioramento rispetto a WEP, ma oramai vulnerabile
-WPA2 --> Miglioramento rispetto a WPA, con maggiore sicurezza
-WPA3 --> Ultimo standard, con la massima sicurezza e integrità
+1. WEP --> Deprecato, vulnerabile
+2. WPA --> Miglioramento rispetto a WEP, ma oramai vulnerabile
+3. WPA2 --> Miglioramento rispetto a WPA, con maggiore sicurezza
+4. WPA3 --> Ultimo standard, con la massima sicurezza e integrità
 
 ---
 
@@ -141,6 +141,5 @@ Rete:
 - Completare e correggere esercizi su RADIUS secondo le correzioni fornite in classe
 
 ## Note
-
 
 ## Immagini
