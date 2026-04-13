@@ -98,6 +98,7 @@ Esempio:
 ```c
 unsigned int x; // solo valori >= 0
 ```
+
 ### sizeof()
 
 - Operatore che restituisce la dimensione in byte di un tipo o variabile
