@@ -167,11 +167,13 @@ Nota:
 ---
 
 ## Attività
+
 - Verificare il PATH del proprio sistema
 - Aggiungere un percorso temporaneo da shell
 - Stampare dimensione e limiti dei tipi nativi usando limits.h, float.h e sizeof()
 
 ## Materiali
+
 - Compilatore C (gcc / MinGW)
 - Terminale
 
