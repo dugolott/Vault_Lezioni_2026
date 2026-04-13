@@ -93,13 +93,14 @@ Questo processo di autenticazione reciproca garantisce la sicurezza dell'intera 
 
 ### Flusso semplificato
 
-![[Pasted image 20260413185246.png|511]]
-0. Il NAS (AP) si autentica al RADIUS ed instaura un canale cifrato
-1. Client Richiede connessione al NAS
-2. AP (NAS) inoltra richiesta al RADIUS
-3. RADIUS verifica credenziali del client
-4. Se OK → accesso alla rete (può partire DORA del DHCP per fornire IP al client)
-5. RADIUS registra attività (Accounting)
+![Diagramma RADIUS](img/RADIUS-Authentication-Process.png)
+
+1. Il NAS (AP) si autentica al RADIUS ed instaura un canale cifrato
+2. Client Richiede connessione al NAS
+3. AP (NAS) inoltra richiesta al RADIUS
+4. RADIUS verifica credenziali del client
+5. Se OK → accesso alla rete (può partire DORA del DHCP per fornire IP al client)
+6. RADIUS registra attività (Accounting)
 
 ---
 
