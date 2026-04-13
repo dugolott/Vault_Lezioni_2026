@@ -1,4 +1,4 @@
-# 10/04 — Variabili di ambiente e tipi in C
+#2026-04-09 — Variabili di ambiente e tipi in C
 
 tags: [lezione]
 classe: 3C INF
@@ -103,7 +103,7 @@ unsigned int x; // solo valori >= 0
 - Operatore che restituisce la dimensione in byte di un tipo o variabile
 - Esempio:
 
-```
+```c
 printf("Dimensione di int: %zu byte\n", sizeof(int));
 ```
 
