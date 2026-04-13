@@ -93,7 +93,7 @@ Questo processo di autenticazione reciproca garantisce la sicurezza dell'intera 
 
 ### Flusso semplificato
 
-![Diagramma RADIUS](img/RADIUS-Authentication-Process.png)
+![Diagramma RADIUS|551](img/RADIUS-Authentication-Process.png)
 
 1. Il NAS (AP) si autentica al RADIUS ed instaura un canale cifrato
 2. Client Richiede connessione al NAS
@@ -111,7 +111,7 @@ E' il meccanismo di autenticazione utilizzato in molte reti WiFi pubbliche, come
 Rete:
 
 - apparentemente aperta (NO lucchetto nelle icone WiFi)
-- ma con accesso limitato (finchè non ci si autentica non si ha accesso a internet)
+- ma con accesso limitato (finché non ci si autentica non si ha accesso ad internet)
 
 #### Funzionamento
 
