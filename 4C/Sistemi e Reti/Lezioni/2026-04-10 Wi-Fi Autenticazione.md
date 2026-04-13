@@ -1,7 +1,7 @@
 # 2026-04-10 — WiFi e autenticazione (Enterprise)
 
 tags: [lezione]
-classe: quarta
+classe: 4^C
 materia: Informatica
 
 ## Argomento
@@ -20,25 +20,26 @@ Tecniche di autenticazione WiFi: Enterprise, RADIUS, Captive Portal
 ### Sicurezza WiFi: contesto
 
 Cosa intendiamo per sicurezza?
-In una parola, basta ricordare alla C.I.A.: Confidentiality, Integrity, Availability.
+In una parola, basta ricordare **C.I.A.**: Confidentiality, Integrity, Availability.
+
 Ovvero:
 
-- Protezione dei dati trasmessi --> *cifratura* (Confidentiality)
-- Protezione da alterazioni dei dati trasmessi --> *integrità* (Integrity)
-- Protezione da accessi non autorizzati --> *autenticazione* (Availability)
+- Protezione dei dati trasmessi --> ***cifratura*** (Confidentiality)
+- Protezione da alterazioni dei dati trasmessi --> ***integrità*** (Integrity)
+- Protezione da accessi non autorizzati --> ***autenticazione*** (Availability)
 
 Per quanto riguarda l'*autenticazione*, le reti WiFi possono adottare diversi livelli di sicurezza:
 
-- Open (nessuna autenticazione) --> vulnerabile a chiunque, soluzione non accettabile per reti private, aziendali o pubbliche
-- PSK (password condivisa) --> semplice ma poco sicura (password condivisa: un segreto è tale solo se è conosciuto da pochi, ma in questo caso è condiviso da tutti)
-- Enterprise (autenticazione centralizzata) --> ogni utente ha credenziali univoche, gestite da un server centrale (RADIUS)
+- **Open** (nessuna autenticazione) --> vulnerabile a chiunque, soluzione non accettabile per reti private, aziendali o pubbliche
+- **PSK** (Pre-Shared Key) --> semplice ma poco sicura (password condivisa: un segreto è tale solo se è conosciuto da pochi, ma in questo caso è condiviso da tutti)
+- **Enterprise** (autenticazione centralizzata) --> ogni utente ha credenziali univoche, gestite da un server centrale (RADIUS)
 
 Al di là del modello di autenticazione, quello che veramente garantisce la triade CIA della sicurezza è il protocollo di cifratura. In ordine di sicurezza crescente, abbiamo:
 
-1. WEP --> Deprecato, vulnerabile
-2. WPA --> Miglioramento rispetto a WEP, ma oramai vulnerabile
-3. WPA2 --> Miglioramento rispetto a WPA, con maggiore sicurezza
-4. WPA3 --> Ultimo standard, con la massima sicurezza e integrità
+1. **WEP** --> Deprecato, vulnerabile
+2. **WPA** --> Miglioramento rispetto a WEP, ma oramai vulnerabile
+3. **WPA2** --> Miglioramento rispetto a WPA, con maggiore sicurezza
+4. **WPA3** --> Ultimo standard, con la massima sicurezza e integrità
 
 ---
 
@@ -49,9 +50,7 @@ Si basa su un'infrastruttura centralizzata che prevede:
 - un server RADIUS
 - uno o più NAS (Network Access Server) che fungono da client del RADIUS, agendo come intermediari tra i dispositivi degli utenti e il server di autenticazione
 
-#### RADIUS
-
-Remote Authentication Dial-In User Service
+#### RADIUS (Remote Authentication Dial-In User Service)
 
 È un server AAA:
 
@@ -83,7 +82,13 @@ Questo processo di autenticazione reciproca garantisce la sicurezza dell'intera 
 - Access Point (AP)
 - Controller WiFi
 
-#### Ruolo
+Per ciascun NAS, il server RADIUS mantiene una configurazione che include:
+
+- credenziali di autenticazione (ad esempio, una chiave condivisa segreta)
+- Indirizzo IP del NAS (obbligatoriamente statico)
+- altri parametri di configurazione specifici per quel NAS
+
+#### Ruolo del NAS
 
 - riceve richieste di connessione dai client utente
 - inoltra le richieste di autenticazione al RADIUS
@@ -122,7 +127,9 @@ Rete:
 
 #### Collegamento con AAA
 
-- Rappresenta un elementare interfaccia di registrazione e autenticazione,su RADIUS o altri sistemi di backend
+- Rappresenta un'elementare interfaccia di registrazione e autenticazione,su RADIUS o altri sistemi di backend
+- risparmia la configurazione di un NAS dedicato, oltre alla creazione e distribuzione di credenziali univoche per ogni utente
+- è una soluzione più semplice e veloce da implementare, ma con minore sicurezza rispetto a WPA2/WPA3 Enterprise, poiché non prevede l'autenticazione reciproca tra NAS e server di autenticazione, e le credenziali degli utenti sono spesso più deboli
 
 ---
 
