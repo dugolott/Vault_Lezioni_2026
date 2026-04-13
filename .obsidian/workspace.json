@@ -189,7 +189,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,8 +207,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e951b4c52b2d6084",
+  "active": "0da35b3edeadb922",
   "lastOpenFiles": [
+    "4C/Sistemi e Reti/Lezioni/2026-04-10 Wi-Fi Autenticazione.md",
+    "4C/Sistemi e Reti/Lezioni/26-04-10 Wi-Fi Autenticazione.md",
     "_templates/lezione.md",
     "3C/Sistemi e Reti/Lezioni/2026-04-09 Path e Tipi C.md",
     "3C/Sistemi e Reti/Lezioni/2026-04-10 Path e Tipi C.md",
