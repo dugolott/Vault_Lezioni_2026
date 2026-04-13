@@ -93,6 +93,7 @@ Questo processo di autenticazione reciproca garantisce la sicurezza dell'intera 
 
 ### Flusso semplificato
 
+![[Pasted image 20260413185246.png|511]]
 0. Il NAS (AP) si autentica al RADIUS ed instaura un canale cifrato
 1. Client Richiede connessione al NAS
 2. AP (NAS) inoltra richiesta al RADIUS

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3C/Sistemi e Reti/Lezioni/2026-04-09 Path e Tipi C.md",
+                "file": "4C/Sistemi e Reti/Lezioni/2026-04-10 Wi-Fi Autenticazione.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-09 Path e Tipi C"
+              "title": "2026-04-10 Wi-Fi Autenticazione"
             }
           }
         ]
@@ -207,12 +207,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0da35b3edeadb922",
+  "active": "e951b4c52b2d6084",
   "lastOpenFiles": [
+    "Pasted image 20260413185246.png",
+    "3C/Sistemi e Reti/Lezioni/2026-04-09 Path e Tipi C.md",
+    "4C/Sistemi e Reti/Lezioni/img/RADIUS-Authentication-Process.png",
     "4C/Sistemi e Reti/Lezioni/2026-04-10 Wi-Fi Autenticazione.md",
     "4C/Sistemi e Reti/Lezioni/26-04-10 Wi-Fi Autenticazione.md",
     "_templates/lezione.md",
-    "3C/Sistemi e Reti/Lezioni/2026-04-09 Path e Tipi C.md",
     "3C/Sistemi e Reti/Lezioni/2026-04-10 Path e Tipi C.md",
     "3C/Sistemi e Reti/Lezioni/lezione_10_04_path_tipi_c.md",
     "3A/TEP/Esercizi/01 - Scheduling - Overhead RoundRobin.md",
