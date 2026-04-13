@@ -102,7 +102,7 @@ unsigned int x; // solo valori >= 0
 - Operatore che restituisce la dimensione in byte di un tipo o variabile
 - Esempio:
 
-```
+```c
 printf("Dimensione di int: %zu byte\n", sizeof(int));
 ```
 
@@ -112,7 +112,7 @@ Esercizio:
 Scrivere un programma che stampi dimensione e range dei tipi nativi usando `<limits.h>` , `<float.h>`e `sizeof()`
 
 Svolgimento:
-```
+```c
 #include <stdio.h>
 #include <limits.h>
 #include <float.h>
@@ -136,7 +136,7 @@ int main(){
 
 Definizione:
 
-```
+```c
 #include <limits.h>
 
 #define ERRORE1 INT_MAX
@@ -145,7 +145,7 @@ Definizione:
 
 Uso:
 
-```
+```c
 int index = calcola_indice(100);
 
 if(index != ERRORE1)
