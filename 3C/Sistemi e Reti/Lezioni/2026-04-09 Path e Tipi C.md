@@ -44,6 +44,7 @@ set PATH=%PATH%;C:\Program Files\CodeBlocks\MinGW\bin
 ```
 
 Nota:
+
 - `%PATH%` mantiene i percorsi esistenti
 - Non dimenticare il `;` come separatore
 
@@ -64,6 +65,7 @@ Nota:
 (°) dipendente dall'architettura
 
 Attenzione:
+
 - Windows: int e long sono entrambi 32 bit
 - A seconda dell'architettura e del compilatore, i tipi possono variare in dimensione e range; in particolare le opzioni di compilazione possono influenzare la dimensione dei tipi (es. -m32 vs -m64), per questo è importante usare sizeof() e limits.h per verificare le dimensioni e i range effettivi.
 - Per la stampa dei tipi interi usare `%d` (signed) o `%u` (unsigned)
@@ -80,6 +82,7 @@ Attenzione:
 | long double* | 80/128 |
 
 Nota:
+
 - La FPU esegue i calcoli alla massima precisione disponibile (>=80 bit)
 - la stampa di float e double usale specifiche di formato `%f` o `%e` (notazione esponenziale)
 - long double è supportato solo su alcune piattaforme e compilatori, e la sua dimensione può variare; in molti casi è implementato come 80 bit (extended precision) o 128 bit (quadruple precision), ma non è garantito
@@ -114,6 +117,7 @@ Esercizio:
 Scrivere un programma che stampi dimensione e range dei tipi nativi usando `<limits.h>` , `<float.h>`e `sizeof()`
 
 Svolgimento:
+
 ```c
 #include <stdio.h>
 #include <limits.h>
@@ -132,6 +136,7 @@ int main(){
     return 0;
 }
 ```
+
 ---
 
 ### Gestione errori con valori sentinella
@@ -161,6 +166,7 @@ else
 ```
 
 Nota:
+
 - Come codici di errore dobbiamo sempre usare valori fuori dal dominio valido
 - attenzione a non confonderli con risultati reali
 
