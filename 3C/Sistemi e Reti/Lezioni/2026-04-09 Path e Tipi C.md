@@ -29,7 +29,8 @@ La variabile di ambiente PATH contiene l'elenco dei percorsi in cui il sistema o
 
 Esempio:
 
-```
+```bash
+echo %PATH%
 C:\Windows\System32;C:\Program Files\...
 ```
 
@@ -38,7 +39,7 @@ C:\Windows\System32;C:\Program Files\...
 - **Persistente**: pannello di controllo → variabili d’ambiente
 - **Temporanea (shell)**:
 
-```
+```bash
 set PATH=%PATH%;C:\Program Files\CodeBlocks\MinGW\bin
 ```
 
@@ -80,21 +81,21 @@ Attenzione:
 
 Nota:
 - La FPU esegue i calcoli alla massima precisione disponibile (>=80 bit)
-- la stampa di float e double è con `%f` o `%e` (notazione esponenziale)
+- la stampa di float e double usale specifiche di formato `%f` o `%e` (notazione esponenziale)
 - long double è supportato solo su alcune piattaforme e compilatori, e la sua dimensione può variare; in molti casi è implementato come 80 bit (extended precision) o 128 bit (quadruple precision), ma non è garantito
 
 ---
 
 ### Signed vs Unsigned
 
-- `signed` è implicito
-- `unsigned`:
-  - elimina i numeri negativi
+- *`signed`* è implicito
+- *`unsigned`*:
+  - codifica solo numeri positivi e zero
   - raddoppia il range positivo
 
 Esempio:
 
-```
+```c
 unsigned int x; // solo valori >= 0
 ```
 ### sizeof()
@@ -112,7 +113,7 @@ Esercizio:
 Scrivere un programma che stampi dimensione e range dei tipi nativi usando `<limits.h>` , `<float.h>`e `sizeof()`
 
 Svolgimento:
-```
+```c
 #include <stdio.h>
 #include <limits.h>
 #include <float.h>
@@ -136,7 +137,7 @@ int main(){
 
 Definizione:
 
-```
+```c
 #include <limits.h>
 
 #define ERRORE1 INT_MAX
@@ -145,7 +146,7 @@ Definizione:
 
 Uso:
 
-```
+```c
 int index = calcola_indice(100);
 
 if(index != ERRORE1)
