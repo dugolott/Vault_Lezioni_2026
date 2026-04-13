@@ -20,9 +20,9 @@ materia: Informatica
 
 ## Spiegazione
 
-### Variabile PATH
+### Variabile d'Ambiente PATH
 
-La variabile di ambiente PATH contiene l'elenco dei percorsi in cui il sistema operativo cerca gli eseguibili.
+La variabile d'ambiente PATH contiene l'elenco dei percorsi in cui il sistema operativo cerca gli eseguibili.
 
 - Permette di eseguire programmi da qualsiasi directory
 - I percorsi sono separati da `;` (Windows)
@@ -65,10 +65,10 @@ Nota:
 
 Attenzione:
 - Windows: int e long sono entrambi 32 bit
-- A seconda dell'architettura e del compilatore, i tipi possono variare in dimensione e range; in particolare le opzioni di compilazione possono influenzare la dimensione dei tipi (es. -m32 vs -m64)
+- A seconda dell'architettura e del compilatore, i tipi possono variare in dimensione e range; in particolare le opzioni di compilazione possono influenzare la dimensione dei tipi (es. -m32 vs -m64), per questo è importante usare sizeof() e limits.h per verificare le dimensioni e i range effettivi.
 - Per la stampa dei tipi interi usare `%d` (signed) o `%u` (unsigned)
-- Per tipi più grandi di int usare `%lld` (signed) o `%llu` (unsigned) ...purtroppo non è supportato da windows che richiede `%I64d` e `%I64u`
-- L'opzione di compilazione -D__USE_MINGW_ANSI_STDIO abilita il supporto per i formati di stampa standard anche su Windows
+- Per tipi più grandi di int usare `%lld` (signed) o `%llu` (unsigned) ...purtroppo non è supportato da windows che richiede `%I64d` e `%I64u` (storica implementazione Microsoft presente nella datata libreria dinamica di Windows `msvcrt.dll`)
+- L'opzione di compilazione -D__USE_MINGW_ANSI_STDIO abilita il supporto per i formati di stampa standard anche su Windows (linka la libreira ANSI fornita da MinGW per stdio.h, invece di quella Microsoft)
 
 
 #### Floating point (IEEE 754)
