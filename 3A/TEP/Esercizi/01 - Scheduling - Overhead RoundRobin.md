@@ -166,29 +166,29 @@ section CPU
 ### 2. Calcoli
 
 > [!info]+ Ripassiamo le formule
-> a) Tempo di ciclo dello scheduler, ovvero il tempo necessario affinché tutti i processivengano eseguiti una volta:
+> a) Tempo di ciclo dello scheduler, ovvero il tempo necessario affinché tutti i processi siano eseguiti una volta:
 >
->     `Tcycle = N · (Q + Tcsw)`
+>`Tcycle = N · (Q + Tcsw)`
 >
 > b) Tempo di CPU ricevuto da ciascun processo per secondo:
 >
->     `CPU/sec = Q / Tcycle`
+>`CPU/sec = Q / Tcycle`
 >
 > c) Percentuale di CPU per processo
 >
->     `%CPU = Q / Tcycle · 100`
+>`%CPU = Q / Tcycle · 100`
 >
 > d) Overhead dello scheduler
 >
->     `Overhead = Tcsw / (Q + Tcsw) · 100`
+>`Overhead = Tcsw / (Q + Tcsw) · 100`
 >
 > e) Tempo di attesa tra due esecuzioni consecutive
 >
->     `Tw = (N − 1) · (Q + Tcsw)`
+>`Tw = (N − 1) · (Q + Tcsw)`
 >
 > f) Tempo di risposta percepito. Per processi interattivi:
 >
->     `Tr = Tw + Q`
+>`Tr = Tw + Q`
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ox8xYQ-YdyU9M7LH_0q-gCd4ZuwwoZlV?usp=sharing)
 
