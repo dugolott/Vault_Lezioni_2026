@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3A/TEP/Esercizi/01 - Scheduling - Overhead RoundRobin.md",
+                "file": "3C/Sistemi e Reti/Lezioni/2026-04-09 Path e Tipi C.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Scheduling - Overhead RoundRobin"
+              "title": "2026-04-09 Path e Tipi C"
             }
           }
         ]
@@ -208,8 +208,12 @@
   },
   "active": "e951b4c52b2d6084",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "_templates/lezione.md",
+    "3C/Sistemi e Reti/Lezioni/2026-04-09 Path e Tipi C.md",
+    "3C/Sistemi e Reti/Lezioni/2026-04-10 Path e Tipi C.md",
+    "3C/Sistemi e Reti/Lezioni/lezione_10_04_path_tipi_c.md",
     "3A/TEP/Esercizi/01 - Scheduling - Overhead RoundRobin.md",
+    "conflict-files-obsidian-git.md",
     "Senza nome.canvas",
     "Excalidraw/Drawing 2026-04-11 00.21.58.excalidraw.md",
     "Excalidraw",
@@ -222,7 +226,6 @@
     "5C/GPOI/Lezioni",
     "5C/GPOI/Untitled.md",
     "3C/Sistemi e Reti/Lezioni",
-    "_templates/lezione.md",
     "5C/Sistemi e Reti/Lezioni/2026-04-10 prova3.md",
     "2026-04-10 prova.md",
     "2026-04-10 prova2.md",
